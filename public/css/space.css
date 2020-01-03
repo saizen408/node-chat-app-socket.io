@@ -1,53 +1,63 @@
 .large-header {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background: #111;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .demo .large-header {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
 }
 
-.main-title {
+.main-container {
+  width: 100vw;
+}
+
+.absolute {
   position: absolute;
-  margin: 3;
+  top: 5%;
+  left: 32%;
+}
+
+.socket-title2 {
+  font-size: 65px;
   padding: 0;
-  color: #f9f1e9;
   text-align: center;
-  top: 15%;
-  left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+  color: white;
+  display: flex;
+  margin-top: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in 0.5s;
 }
 
 .socket-title {
-  position: absolute;
   font-weight: 100;
   font-size: 25px;
-  margin: 3;
   padding: 0;
-  color: #f9f1e9;
   text-align: center;
-  top: 27%;
-  left: 41%;
   color: white;
   font-family: "Open Sans", sans-serif;
+  display: flex;
+  margin: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-form {
-  position: absolute;
-  margin: 0;
+  margin-top: 100px;
+  margin-left: 85px;
   padding: 0;
-
   text-align: center;
-  top: 40%;
-  left: 38%;
-  /* -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0); */
 }
 
 .demo .main-title {
@@ -56,7 +66,7 @@
   letter-spacing: 0.1em;
 }
 
-.main-title .thin {
+.socket-title2 .thin {
   font-weight: 200;
   background: -webkit-linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);
   -webkit-background-clip: text;
@@ -64,14 +74,8 @@
   opacity: 0.6;
 }
 
-.thick {
+.socket-title2 .thick {
   background: -webkit-linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@media only screen and (max-width: 768px) {
-  .demo .main-title {
-    font-size: 3em;
-  }
 }

@@ -54,32 +54,8 @@ button:disabled {
   background: #7c5cbf94;
 }
 
-/* .main-box {
-  width: 100vw;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .main-title {
-  margin-top: 100px;
-  color: #c99ded;
-  font-family: "Roboto", sans-serif;
-} */
-
 .centered-form {
-  width: 30vw;
-  height: 50vh;
-  z-index: auto;
   opacity: 0.9;
-
-  /* display: flex;
-  margin-top: 50px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 .label-style {
@@ -89,14 +65,21 @@ button:disabled {
 }
 
 .label-style-join {
+  font-weight: 400;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
   color: white;
 }
 .centered-form__box {
   box-shadow: 0 0 17px 1px #1d1f26;
-  /* background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%); */
-  padding: 24px;
+  padding: 12px;
   width: 250px;
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  margin-top: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .centered-form__box:hover {
@@ -129,11 +112,14 @@ button:disabled {
   flex-direction: column;
   max-height: 100vh;
   background-color: #330055;
-  background-image: url("../img/background.svg");
+  background-size: cover;
+  background-position: center center;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
   height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  z-index: 1;
   overflow: scroll;
 }
 .chat__messages {
