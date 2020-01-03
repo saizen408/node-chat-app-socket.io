@@ -54,16 +54,6 @@ button:disabled {
   background: #7c5cbf94;
 }
 
-.background {
-  background-color: #330055;
-  background-image: url('../img/background.svg');
-  height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  overflow: scroll;
-}
-
 .main-box {
   width: 100vw;
 
@@ -76,7 +66,7 @@ button:disabled {
 .main-title {
   margin-top: 100px;
   color: #c99ded;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .centered-form {
@@ -117,7 +107,7 @@ button:disabled {
   flex-direction: column;
   max-height: 100vh;
   background-color: #330055;
-  background-image: url('../img/background.svg');
+  background-image: url("../img/background.svg");
   height: 100vh;
   display: flex;
   align-items: flex-start;
